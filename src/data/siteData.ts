@@ -208,5 +208,339 @@ export const siteData = {
             question: "Do you work outside Dhaka?",
             answer: "Absolutely. While our studio is based in Mirpur, Dhaka, we regularly deliver projects across Chittagong, Sylhet, Rajshahi, and have also worked with diaspora clients on projects internationally."
         }
-    ]
+    ],
+    theme: {
+        colors: {
+            orange: "#FF8C00",
+            orangeDark: "#cc7000",
+            orangeSoft: "rgba(255, 140, 0, 0.12)",
+            black: "#0a0a0a",
+            dark: "#1a1a1a",
+            dark2: "#242424",
+            dark3: "#2e2e2e",
+            gray: "#888",
+            grayLight: "#aaa",
+            white: "#ffffff",
+            whiteSoft: "rgba(255, 255, 255, 0.08)",
+        },
+        typography: {
+            fontHead: "'Playfair Display', Georgia, serif",
+            fontBody: "'DM Sans', sans-serif"
+        }
+    },
+    homePage: {
+        servicesPreview: {
+            tagline: "What We Do",
+            titleMain: "Our Core ",
+            titleAccent: "Services",
+            description: "From concept to completion, we deliver precision, beauty, and unmatched craftsmanship across every discipline.",
+            buttonText: "Learn More",
+            buttonAllText: "View All Services",
+            buttonAllLink: "/services"
+        },
+        featuredProjects: {
+            tagline: "Portfolio",
+            titleMain: "Featured ",
+            titleAccent: "Projects",
+            buttonAllText: "View All Projects",
+            buttonAllLink: "/projects",
+            buttonText: "View Project"
+        },
+        testimonials: {
+            tagline: "What Clients Say",
+            titleMain: "Client ",
+            titleAccent: "Testimonials"
+        },
+        aboutSnippet: {
+            badgeNum: "10+",
+            badgeLabel: "Years of Excellence",
+            image: "/img/img6.jpg",
+            tagline: "Our Story",
+            titleMain: "Design Is Not Just What It ",
+            titleAccent: "Looks Like",
+            paragraphs: [
+                "At Light & Shadow Arch. Studio, we believe that great architecture is a conversation between structure and sensation. Founded with a vision to redefine the built environment in Bangladesh, our studio has grown into a trusted name for discerning clients seeking design that is both breathtaking and functional.",
+                "Every project we take on is a deep study in light, proportion, material, and culture, resulting in spaces that feel not just designed, but discovered. We balance rigorous technical expertise with a deeply humanistic design philosophy."
+            ],
+            features: [
+                "Award-winning designs",
+                "BIM-enabled workflow",
+                "Sustainable approach",
+                "On-time delivery"
+            ],
+            buttonText: "Discover Our Story",
+            buttonLink: "/about"
+        },
+        ctaBanner: {
+            tagline: "Start Your Journey",
+            titleMain: "Ready to Transform ",
+            titleAccent: "Your Space?",
+            description: "Whether it's a dream home, a landmark office, or a hospitality haven, we're ready to make it extraordinary.",
+            buttonText: "Get a Free Consultation",
+            buttonLink: "/contact"
+        }
+    },
+    aboutPage: {
+        hero: {
+            title: "About Our Studio",
+            subtitle: "A decade of translating vision into enduring space.",
+            image: "/img/img1.jpg",
+            label: "Get to Know Us"
+        },
+        story: {
+            tagline: "Our Story",
+            titleMain: "Built on Passion, ",
+            titleAccent: "Driven by Purpose",
+            paragraphs: [
+                "Light & Shadow Arch. Studio was born from a singular conviction: that architecture should do more than shelter — it should elevate. Founded in Dhaka over a decade ago, we set out to challenge the conventional and champion the extraordinary in every project we undertake.",
+                "From our first residential commission to landmark commercial buildings, we have grown steadily while keeping our founding philosophy intact: rigorous design thinking, honest material use, and an unwavering commitment to the client's vision.",
+                "Today, our studio brings together architects, interior designers, 3D artists, and project managers in a collaborative environment that produces work of genuine distinction — responsive to Bangladesh's unique cultural and climatic context, yet firmly global in its ambition."
+            ],
+            image: "/img/img6.jpg",
+            badgeNum: "150+",
+            badgeLabel: "Projects Done",
+            buttonText: "Work With Us",
+            buttonLink: "/contact"
+        },
+        team: {
+            tagline: "The People",
+            titleMain: "Meet Our ",
+            titleAccent: "Expert Team",
+            description: "A diverse collective of creative minds united by one purpose — exceptional design.",
+            members: [
+                { name: "Arman Hossain", role: "Principal Architect", img: "/img/img1.jpg" },
+                { name: "Sabrina Rahman", role: "Lead Interior Designer", img: "/img/img1.jpg" },
+                { name: "Tanvir Ahmed", role: "Senior Project Manager", img: "/img/img1.jpg" }
+            ]
+        },
+        missionVision: {
+            tagline: "What We Stand For",
+            titleMain: "Our Mission ",
+            titleAccent: "& Vision",
+            items: [
+                {
+                    icon: "bullseye",
+                    title: "Our Mission",
+                    description: "To design environments that inspire the human spirit — spaces where light, material, and form are choreographed with intention. We deliver bespoke architectural and interior solutions that reflect our clients' unique identities while contributing positively to the urban fabric of Bangladesh."
+                },
+                {
+                    icon: "eye",
+                    title: "Our Vision",
+                    description: "To be the most respected design studio in South Asia, recognised for producing work of timeless quality that bridges the gap between artistry and engineering — shaping cities and lives for generations to come."
+                },
+                {
+                    icon: "leaf",
+                    title: "Sustainability",
+                    description: "Every project we design is underpinned by a commitment to environmental responsibility. We integrate passive design strategies, locally-sourced materials, and energy-efficient systems as standard practice."
+                },
+                {
+                    icon: "users",
+                    title: "Client Partnership",
+                    description: "We treat every client as a collaborator. Through open communication, transparent processes, and genuine listening, we ensure the final design always exceeds expectation while remaining true to budget and timeline."
+                }
+            ]
+        },
+        ctaBanner: {
+            tagline: "Let's Create Together",
+            titleMain: "Have a Project in Mind?",
+            titleAccent: "",
+            description: "Tell us about your vision and we'll craft a design strategy tailored just for you.",
+            buttonText: "Start a Conversation",
+            buttonLink: "/contact"
+        }
+    },
+    servicesPage: {
+        hero: {
+            title: "Our Services",
+            subtitle: "Comprehensive design solutions from concept to completion.",
+            image: "/img/img1.jpg",
+            label: "What We Offer"
+        },
+        expertise: {
+            tagline: "Expertise",
+            titleMain: "Design Services ",
+            titleAccent: "Tailored for You",
+            description: "Every service we provide is underpinned by meticulous attention to detail, creative innovation, and a deep respect for our clients' goals and timelines."
+        },
+        process: {
+            tagline: "How We Work",
+            titleMain: "Our Design ",
+            titleAccent: "Process",
+            steps: [
+                { step: "01", title: "Discovery", icon: "magnifying-glass", desc: "We listen deeply to understand your vision, lifestyle, budget, and the story you want your space to tell." },
+                { step: "02", title: "Concept Design", icon: "pencil-ruler", desc: "We prepare concept drawings, mood boards, and 3D explorations to establish the design direction collaboratively." },
+                { step: "03", title: "Development", icon: "drafting-compass", desc: "Detailed drawings, specifications, and material selections are finalised. Every decision is documented for precise execution." },
+                { step: "04", title: "Delivery", icon: "flag-checkered", desc: "We supervise construction, manage contractors, and oversee every detail until your space is handed over flawlessly." }
+            ]
+        },
+        ctaBanner: {
+            tagline: "Start the Conversation",
+            titleMain: "Ready to Begin Your ",
+            titleAccent: "Design Journey?",
+            description: "Reach out today to discuss your project and receive a customised proposal from our team.",
+            buttonText: "Request a Quote",
+            buttonLink: "/contact"
+        }
+    },
+    projectsPage: {
+        hero: {
+            title: "Our Projects",
+            subtitle: "A curated selection of our distinguished completed and proposed works.",
+            image: "/img/projects/dewan8.jpg",
+            label: "Portfolio"
+        },
+        portfolio: {
+            tagline: "Selected Works",
+            titleMain: "Explore Our ",
+            titleAccent: "Portfolio"
+        },
+        ctaBanner: {
+            tagline: "Commission Your Project",
+            titleMain: "Have a Space That Needs to ",
+            titleAccent: "Come Alive?",
+            description: "We'd love to hear about your project. Let's start with a conversation.",
+            buttonText: "Start a Project",
+            buttonLink: "/contact"
+        }
+    },
+    contactPage: {
+        hero: {
+            title: "Contact Us",
+            subtitle: "Let's start a conversation about your next great space.",
+            image: "/img/img1.jpg",
+            label: "Reach Out to Us"
+        },
+        form: {
+            tagline: "Send a Message",
+            titleMain: "Tell Us About Your ",
+            titleAccent: "Project",
+            description: "Fill in the form below and our team will get back to you within 24 hours.",
+            buttonText: "Send Message",
+            services: [
+                "Interior Design",
+                "Architecture",
+                "Renovation",
+                "3D Visualization",
+                "Consultation",
+                "Project Management",
+                "Other"
+            ]
+        },
+        info: {
+            googleMapsUrl: "https://maps.google.com/maps?q=Senpara+Parbata,+Mirpur-10,+Dhaka,+Bangladesh&output=embed&z=15",
+            socialTitle: "Follow Our Work"
+        },
+        faq: {
+            tagline: "Common Questions",
+            titleMain: "Frequently ",
+            titleAccent: "Asked Questions"
+        }
+    },
+    clientsPage: {
+        hero: {
+            title: "Our Clients",
+            subtitle: "Trusted by businesses, loved by homeowners across Bangladesh.",
+            image: "/img/img1.jpg",
+            label: "Our Valued Clients"
+        },
+        clientLogos: {
+            tagline: "Who We've Worked With",
+            titleMain: "Trusted by ",
+            titleAccent: "Happy Clients",
+            description: "From growing businesses to private homeowners, our clients span restaurants, offices, commercial spaces and residences across Bangladesh."
+        },
+        testimonials: {
+            tagline: "Client Voices",
+            titleMain: "What Our Clients ",
+            titleAccent: "Say About Us",
+            list: [
+                {
+                    name: "Mughal Darbar Owner",
+                    role: "Restaurant Client, Syedpur",
+                    quote: "3D Studio designed our restaurant interior beautifully. They showed us the full 3D model before starting and the final result was exactly what we wanted — delivered within our budget.",
+                    avatar: "/img/img1.jpg"
+                },
+                {
+                    name: "Darbar Property",
+                    role: "Office Client, Rangpur",
+                    quote: "Our office looks completely transformed. The team was professional, on time and the quality of craftsmanship was outstanding. We would recommend 3D Studio to any business looking for a modern workspace.",
+                    avatar: "/img/img1.jpg"
+                },
+                {
+                    name: "Residential Client",
+                    role: "Home Interior Client, Dhaka",
+                    quote: "They listened to everything we wanted, showed us the design in 3D first, and delivered a stunning home interior within our budget. The free consultation made the whole process so easy and stress-free.",
+                    avatar: "/img/img1.jpg"
+                }
+            ]
+        },
+        ctaBanner: {
+            tagline: "Join Our Client Family",
+            titleMain: "Ready to Become Our Next ",
+            titleAccent: "Success Story?",
+            description: "Call us today for a free consultation and let's create your perfect space together.",
+            buttonText: "Call: 01746-957037",
+            buttonLink: "/contact"
+        }
+    },
+    whyUsPage: {
+        hero: {
+            title: "Why Choose Us",
+            subtitle: "What makes 3D Studio different — and why it matters for your project.",
+            image: "/img/img1.jpg",
+            label: "The 3D Studio Difference"
+        },
+        differentiators: {
+            tagline: "Our Differentiators",
+            titleMain: "Quality Design, ",
+            titleAccent: "Honest Service",
+            description: "Choosing the right interior design partner is a big decision. Here's why clients across Bangladesh consistently choose 3D Studio Architect."
+        },
+        features: [
+            {
+                num: "01",
+                label: "3D First Approach",
+                title: "See Your Space Before Work Begins",
+                desc: "Before a single wall is touched, we build a complete 3D model of your space so you can see exactly how it will look. You can review, adjust and approve every detail before execution — no surprises, no regrets.",
+                list: ["Full 3D model before any work starts", "Photorealistic renders for every project", "Customise design freely before finalising", "Clear visual communication at every stage"],
+                img: "/img/img3.jpg",
+                reverse: false
+            },
+            {
+                num: "02",
+                label: "Craftsmanship",
+                title: "Skilled Team, Quality Results",
+                desc: "Our experienced team of designers and craftsmen ensures every project is executed to the highest standard. We use quality materials, precise execution and thorough supervision from start to handover.",
+                list: ["Experienced interior design team", "Skilled and vetted craftsmen", "Quality materials within your budget", "Strict on-site supervision throughout"],
+                img: "/img/img4.jpg",
+                reverse: true
+            },
+            {
+                num: "03",
+                label: "Budget Friendly",
+                title: "Best Service Within Your Budget",
+                desc: "We believe great design should be accessible. We work within your budget without compromising on style or quality — offering flexible packages for homes, offices and restaurants of all sizes.",
+                list: ["Transparent and honest pricing", "Flexible packages for all budgets", "No hidden costs after agreement", "Free consultation before any commitment"],
+                img: "/img/img5.jpg",
+                reverse: false
+            },
+            {
+                num: "04",
+                label: "Client First",
+                title: "Your Vision is Our Priority",
+                desc: "We don't push a fixed style — we listen. Your taste, lifestyle and budget guide every decision we make. We offer free consultation, regular updates and after-handover support because your satisfaction is our goal.",
+                list: ["Free initial consultation for all clients", "Design tailored to your taste and needs", "Regular updates throughout the project", "After-handover support and advice included"],
+                img: "/img/img2.jpg",
+                reverse: true
+            }
+        ],
+        ctaBanner: {
+            tagline: "Your Dream Space Awaits",
+            titleMain: "Let's Build Something ",
+            titleAccent: "You'll Love",
+            description: "Call us today for a free consultation. We serve Dhaka, Rangpur, Lalmonirhat and all across Bangladesh.",
+            buttonText: "Call: 01746-957037",
+            buttonLink: "/contact"
+        }
+    }
 };

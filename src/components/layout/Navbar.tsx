@@ -22,18 +22,18 @@ const Navbar = () => {
         <nav className={`navbar ${isScrolled || pathname !== "/" ? "scrolled" : ""} ${isMenuOpen ? "scrolled" : ""}`}>
             <div className="nav-inner">
                 <Link href="/" className="nav-logo">
-                    <span className="studio-label">arch. studio</span>
+                    <span className="studio-label">{siteData.company.tagline}</span>
                     <span className="logo-name">
-                        Light <span>&</span> Shadow
+                        {siteData.company.name.split(' & ')[0]} <span>&</span> {siteData.company.name.split(' & ')[1]}
                     </span>
                 </Link>
 
                 <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
                     <div className="mobile-menu-header">
                         <div className="nav-logo">
-                            <span className="studio-label">arch. studio</span>
+                            <span className="studio-label">{siteData.company.tagline}</span>
                             <span className="logo-name">
-                                Light <span>&</span> Shadow
+                                {siteData.company.name.split(' & ')[0]} <span>&</span> {siteData.company.name.split(' & ')[1]}
                             </span>
                         </div>
                         <button

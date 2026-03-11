@@ -9,13 +9,13 @@ const ServicesPreview = () => {
     <section className="services-preview">
       <div className="container">
         <div className="section-head">
-          <span className="section-label fade-in">What We Do</span>
+          <span className="section-label fade-in">{siteData.homePage.servicesPreview.tagline}</span>
           <h2 className="section-title fade-in">
-            Our Core <span>Services</span>
+            {siteData.homePage.servicesPreview.titleMain} <span>{siteData.homePage.servicesPreview.titleAccent}</span>
           </h2>
           <div className="underline-accent center"></div>
           <p className="section-desc fade-in delay-1">
-            From concept to completion, we deliver precision, beauty, and unmatched craftsmanship across every discipline.
+            {siteData.homePage.servicesPreview.description}
           </p>
         </div>
 
@@ -27,16 +27,16 @@ const ServicesPreview = () => {
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <Link href="/services" className="service-link">
-                Learn More <i className="fa-solid fa-arrow-right"></i>
+              <Link href={siteData.homePage.servicesPreview.buttonAllLink} className="service-link">
+                {siteData.homePage.servicesPreview.buttonText} <i className="fa-solid fa-arrow-right"></i>
               </Link>
             </div>
           ))}
         </div>
 
         <div style={{ textAlign: "center", marginTop: "3rem" }}>
-          <Link href="/services" className="btn btn-outline">
-            View All Services
+          <Link href={siteData.homePage.servicesPreview.buttonAllLink} className="btn btn-outline">
+            {siteData.homePage.servicesPreview.buttonAllText}
           </Link>
         </div>
       </div>

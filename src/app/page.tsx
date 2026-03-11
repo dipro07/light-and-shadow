@@ -6,6 +6,7 @@ import StatsBar from "@/components/home/StatsBar";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import Testimonials from "@/components/home/Testimonials";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 export default function Home() {
     return (
@@ -17,26 +18,26 @@ export default function Home() {
                 <div className="container">
                     <div className="about-grid">
                         <div className="about-image-wrap fade-in-left">
-                            <img src="/img/img6.jpg" alt="Studio portfolio" />
+                            <img src={siteData.homePage.aboutSnippet.image} alt="Studio portfolio" />
                             <div className="about-badge">
-                                <div className="num">10+</div>
-                                <div className="label">Years of Excellence</div>
+                                <div className="num">{siteData.homePage.aboutSnippet.badgeNum}</div>
+                                <div className="label">{siteData.homePage.aboutSnippet.badgeLabel}</div>
                             </div>
                         </div>
                         <div className="about-text fade-in-right">
-                            <span className="section-label">Our Story</span>
-                            <h2 className="section-title">Design Is Not Just What It <span>Looks Like</span></h2>
+                            <span className="section-label">{siteData.homePage.aboutSnippet.tagline}</span>
+                            <h2 className="section-title">{siteData.homePage.aboutSnippet.titleMain} <span>{siteData.homePage.aboutSnippet.titleAccent}</span></h2>
                             <div className="underline-accent"></div>
-                            <p>At Light & Shadow Arch. Studio, we believe that great architecture is a conversation between structure and sensation. Founded with a vision to redefine the built environment in Bangladesh, our studio has grown into a trusted name for discerning clients seeking design that is both breathtaking and functional.</p>
-                            <p>Every project we take on is a deep study in light, proportion, material, and culture, resulting in spaces that feel not just designed, but discovered. We balance rigorous technical expertise with a deeply humanistic design philosophy.</p>
+                            {siteData.homePage.aboutSnippet.paragraphs.map((para, i) => (
+                                <p key={i}>{para}</p>
+                            ))}
                             <div className="about-features">
-                                <div className="about-feat-item"><i className="fa-solid fa-check-circle"></i> Award-winning designs</div>
-                                <div className="about-feat-item"><i className="fa-solid fa-check-circle"></i> BIM-enabled workflow</div>
-                                <div className="about-feat-item"><i className="fa-solid fa-check-circle"></i> Sustainable approach</div>
-                                <div className="about-feat-item"><i className="fa-solid fa-check-circle"></i> On-time delivery</div>
+                                {siteData.homePage.aboutSnippet.features.map((feat, i) => (
+                                    <div key={i} className="about-feat-item"><i className="fa-solid fa-check-circle"></i> {feat}</div>
+                                ))}
                             </div>
-                            <Link href="/about" className="btn btn-primary" style={{ marginTop: "2rem" }}>
-                                Discover Our Story
+                            <Link href={siteData.homePage.aboutSnippet.buttonLink} className="btn btn-primary" style={{ marginTop: "2rem" }}>
+                                {siteData.homePage.aboutSnippet.buttonText}
                             </Link>
                         </div>
                     </div>
@@ -51,13 +52,13 @@ export default function Home() {
             {/* CTA Banner */}
             <section className="cta-banner">
                 <div className="container" style={{ textAlign: "center" }}>
-                    <span className="section-label fade-in">Start Your Journey</span>
-                    <h2 className="fade-in delay-1">Ready to Transform <span style={{ color: "var(--orange)" }}>Your Space?</span></h2>
+                    <span className="section-label fade-in">{siteData.homePage.ctaBanner.tagline}</span>
+                    <h2 className="fade-in delay-1">{siteData.homePage.ctaBanner.titleMain} <span style={{ color: "var(--orange)" }}>{siteData.homePage.ctaBanner.titleAccent}</span></h2>
                     <p className="fade-in delay-2" style={{ maxWidth: "600px", margin: "1.5rem auto 2.5rem", color: "var(--gray-light)" }}>
-                        Whether it's a dream home, a landmark office, or a hospitality haven, we're ready to make it extraordinary.
+                        {siteData.homePage.ctaBanner.description}
                     </p>
-                    <Link href="/contact" className="btn btn-primary fade-in delay-3">
-                        Get a Free Consultation &nbsp;<i className="fa-solid fa-arrow-right"></i>
+                    <Link href={siteData.homePage.ctaBanner.buttonLink} className="btn btn-primary fade-in delay-3">
+                        {siteData.homePage.ctaBanner.buttonText} &nbsp;<i className="fa-solid fa-arrow-right"></i>
                     </Link>
                 </div>
             </section>

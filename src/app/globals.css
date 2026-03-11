@@ -2119,6 +2119,14 @@ footer {
     .stats-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .testimonial-slide {
+        padding: 0 !important;
+    }
+
+    .testimonial-card {
+        padding: 2rem;
+    }
 }
 
 /* ===== FLOATING WHATSAPP BUTTON ===== */

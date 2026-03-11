@@ -11,8 +11,8 @@ const Testimonials = () => {
         <section className="testimonials">
             <div className="container">
                 <div className="section-head">
-                    <span className="section-label fade-in">What Clients Say</span>
-                    <h2 className="section-title fade-in">Client <span>Testimonials</span></h2>
+                    <span className="section-label fade-in">{siteData.homePage.testimonials.tagline}</span>
+                    <h2 className="section-title fade-in">{siteData.homePage.testimonials.titleMain} <span>{siteData.homePage.testimonials.titleAccent}</span></h2>
                     <div className="underline-accent center"></div>
                 </div>
 

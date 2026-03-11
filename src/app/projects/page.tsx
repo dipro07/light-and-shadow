@@ -16,17 +16,17 @@ const ProjectsPage = () => {
     return (
         <main>
             <PageHero
-                title="Our Projects"
-                subtitle="A curated selection of our distinguished completed and proposed works."
-                image="/img/projects/dewan8.jpg"
-                label="Portfolio"
+                title={siteData.projectsPage.hero.title}
+                subtitle={siteData.projectsPage.hero.subtitle}
+                image={siteData.projectsPage.hero.image}
+                label={siteData.projectsPage.hero.label}
             />
 
             <section className="projects-full">
                 <div className="container">
                     <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-                        <span className="section-label">Selected Works</span>
-                        <h2 className="section-title fade-in">Explore Our <span>Portfolio</span></h2>
+                        <span className="section-label">{siteData.projectsPage.portfolio.tagline}</span>
+                        <h2 className="section-title fade-in">{siteData.projectsPage.portfolio.titleMain} <span>{siteData.projectsPage.portfolio.titleAccent}</span></h2>
                         <div className="underline-accent center"></div>
                     </div>
 
@@ -61,13 +61,13 @@ const ProjectsPage = () => {
             {/* CTA */}
             <section className="cta-banner">
                 <div className="container" style={{ textAlign: "center" }}>
-                    <span className="section-label fade-in">Commission Your Project</span>
-                    <h2 className="fade-in delay-1">Have a Space That Needs to <span style={{ color: "var(--orange)" }}>Come Alive?</span></h2>
+                    <span className="section-label fade-in">{siteData.projectsPage.ctaBanner.tagline}</span>
+                    <h2 className="fade-in delay-1">{siteData.projectsPage.ctaBanner.titleMain} <span style={{ color: "var(--orange)" }}>{siteData.projectsPage.ctaBanner.titleAccent}</span></h2>
                     <p style={{ maxWidth: "600px", margin: "1.5rem auto 2.5rem", color: "var(--gray-light)" }} className="fade-in delay-2">
-                        We'd love to hear about your project. Let's start with a conversation.
+                        {siteData.projectsPage.ctaBanner.description}
                     </p>
-                    <Link href="/contact" className="btn btn-primary fade-in delay-3">
-                        Start a Project &nbsp;<i className="fa-solid fa-arrow-right"></i>
+                    <Link href={siteData.projectsPage.ctaBanner.buttonLink} className="btn btn-primary fade-in delay-3">
+                        {siteData.projectsPage.ctaBanner.buttonText} &nbsp;<i className="fa-solid fa-arrow-right"></i>
                     </Link>
                 </div>
             </section>

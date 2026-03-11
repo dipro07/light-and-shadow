@@ -71,7 +71,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; 2026 <span>Light & Shadow Arch. Studio</span>. All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} <span>{siteData.company.name}</span>. All Rights Reserved.</p>
                     <p>Designed with <span>Fuad Hasan</span> in Dhaka, Bangladesh</p>
                 </div>
             </div>

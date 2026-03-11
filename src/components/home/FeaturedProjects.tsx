@@ -10,13 +10,13 @@ const FeaturedProjects = () => {
             <div className="container">
                 <div className="section-head fade-in">
                     <div>
-                        <span className="section-label">Portfolio</span>
+                        <span className="section-label">{siteData.homePage.featuredProjects.tagline}</span>
                         <h2 className="section-title">
-                            Featured <span>Projects</span>
+                            {siteData.homePage.featuredProjects.titleMain} <span>{siteData.homePage.featuredProjects.titleAccent}</span>
                         </h2>
                     </div>
-                    <Link href="/projects" className="btn btn-outline btn-sm">
-                        View All Projects
+                    <Link href={siteData.homePage.featuredProjects.buttonAllLink} className="btn btn-outline btn-sm">
+                        {siteData.homePage.featuredProjects.buttonAllText}
                     </Link>
                 </div>
 
@@ -29,7 +29,7 @@ const FeaturedProjects = () => {
                                     <p className="project-cat">{project.category}</p>
                                     <h3 className="project-name">{project.name}</h3>
                                     <Link href={`/projects/${project.slug}`} className="btn btn-primary btn-sm project-btn">
-                                        View Project
+                                        {siteData.homePage.featuredProjects.buttonText}
                                     </Link>
                                 </div>
                             </div>
